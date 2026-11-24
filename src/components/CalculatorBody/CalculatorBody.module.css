@@ -1,0 +1,46 @@
+.CalculatorBody {
+  width: 340px;
+  background: linear-gradient(145deg, #dfd8c7, #c9c1ad);
+  border-radius: 18px;
+  padding: 28px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-shadow: 
+    0 20px 35px rgba(0, 0, 0, 0.45),
+    inset 0 2px 4px rgba(255, 255, 255, 0.7),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.25),
+    0 0 0 2px #98917e;
+  border: 1px solid #baa992;
+  position: relative;
+}
+
+.CalculatorBody::before {
+  content: "ELECTRONIC CALCULATOR • CASIO-70s RETRO";
+  display: block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7d7565;
+  text-align: center;
+  margin-top: -6px;
+  margin-bottom: -10px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.CalculatorBody::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    #9c9483 0px,
+    #9c9483 40px,
+    transparent 40px,
+    transparent 50px
+  );
+  opacity: 0.5;
+  border-radius: 2px;
+  margin-top: -4px;
+}

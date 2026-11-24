@@ -1,0 +1,48 @@
+.numberContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 3;
+}
+
+/* Make 0 span full width across 3 columns */
+.NumberButtonContainer:last-child {
+  grid-column: span 3;
+}
+
+.NumberButtonContainer {
+  display: flex;
+}
+
+.numberButtons {
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(180deg, #ede7d8 0%, #d4ccc0 100%);
+  color: #38342f;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid #baa893;
+  box-shadow: 
+    0 4px 0 #9c8b77,
+    0 5px 6px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.08s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numberButtons:hover {
+  background: linear-gradient(180deg, #f7f2e6 0%, #ddd5c9 100%);
+}
+
+.numberButtons:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 1px 0 #9c8b77,
+    0 2px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}

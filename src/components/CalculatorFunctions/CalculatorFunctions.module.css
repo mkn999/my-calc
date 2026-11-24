@@ -1,0 +1,62 @@
+.numberButtons {
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(180deg, #dd8b57 0%, #b85b23 100%);
+  color: #fff8f0;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid #8e4215;
+  box-shadow: 
+    0 4px 0 #73330f,
+    0 5px 6px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.08s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numberButtons:hover {
+  background: linear-gradient(180deg, #e89966 0%, #c46429 100%);
+}
+
+.numberButtons:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 1px 0 #73330f,
+    0 2px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Operation / Equals distinction or container layout */
+div:has(> .numberButtons) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+/* Give the equals button a retro accent colour */
+button.numberButtons:last-child {
+  background: linear-gradient(180deg, #5c9973 0%, #3e7352 100%);
+  border: 1px solid #2d553c;
+  box-shadow: 
+    0 4px 0 #21402c,
+    0 5px 6px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+button.numberButtons:last-child:hover {
+  background: linear-gradient(180deg, #6ba782 0%, #47815d 100%);
+}
+
+button.numberButtons:last-child:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 1px 0 #21402c,
+    0 2px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
