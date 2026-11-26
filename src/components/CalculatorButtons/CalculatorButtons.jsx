@@ -9,12 +9,19 @@ function CalculatorButtons({
   setoldNumber,
   oldNumber,
   operator,
+  expression,
+  array,
 }) {
   console.log("old", oldNumber, "current", inputVal);
 
   return (
     <div>
-      <CalculatorNumbers number={number} inputVal={inputVal} />
+      <CalculatorNumbers
+        number={number}
+        inputVal={inputVal}
+        expression={expression}
+        array={array}
+      />
       <CalculatorFunctions
         setoperator={setoperator}
         setoldNumber={setoldNumber}
@@ -22,6 +29,8 @@ function CalculatorButtons({
         number={number}
         oldNumber={oldNumber}
         operator={operator}
+        expression={expression}
+        array={array}
       />
     </div>
   );

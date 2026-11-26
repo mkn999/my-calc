@@ -8,9 +8,9 @@ export default function CalculatorFunctions({
   number,
   oldNumber,
   operator,
+  expression,
+  array
 }) {
-
-
   return (
     <div>
       {/* ADDITION */}
@@ -25,6 +25,7 @@ export default function CalculatorFunctions({
             number(0);
           } else {
             setoperator("+");
+            array("+");
             setoldNumber((prev) => prev + Number(inputVal));
             number(0);
           }
@@ -53,7 +54,7 @@ export default function CalculatorFunctions({
       >
         -
       </button>
-      {/* <button
+      <button
         className={styles.numberButtons}
         onClick={() => {
           if (operator === "+") {
@@ -76,7 +77,7 @@ export default function CalculatorFunctions({
         }}
       >
         *
-      </button> */}
+      </button>
       {/* CLEAR SCREEN */}
       <button
         className={styles.numberButtons}

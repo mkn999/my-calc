@@ -1,0 +1,57 @@
+// // import { evalEngine } from "./evalengine";
+// import evalEngine from "./evalengine";
+// export function translator(array) {
+//   const precedence = {
+//     "-": 1,
+//     "+": 1,
+//     "*": 2,
+//     "/": 2,
+//   };
+
+//   const holdingStack = [];
+//   const output = [];
+
+//   for (let k in array) {
+//     if (array.length !== 0) {
+//       //check for (
+//       if (array[k] === "(") {
+//         holdingStack.push(array[k]);
+//       }
+//       //check for )
+//       else if (array[k] === ")" && holdingStack.length !== 0) {
+//         //while because it needs to loop till it finds (
+//         while (holdingStack[holdingStack.length - 1] !== "(") {
+//           output.push(holdingStack.pop());
+//         }
+//         holdingStack.pop();
+//       } else if (
+//         array[k] === "+" ||
+//         array[k] === "-" ||
+//         array[k] === "*" ||
+//         array[k] === "/"
+//       ) {
+//         while (
+//           holdingStack.length !== 0 &&
+//           holdingStack[holdingStack.length - 1] !== "(" &&
+//           precedence[holdingStack[holdingStack.length - 1]] >=
+//             precedence[array[k]]
+//         ) {
+//           output.push(holdingStack.pop()); //pop the last and push it
+//         }
+//         holdingStack.push(array[k]);
+//       } else {
+//         output.push(array[k]);
+//       }
+//     } else {
+//       console.log("Expression Empty");
+//     }
+//   }
+//   while (holdingStack.length !== 0) {
+//     output.push(holdingStack.pop());
+//   }
+
+//   console.log("holding stack ", holdingStack);
+//   console.log("output stack", output);
+// //   evalEngine(output);
+//   return evalEngine(output)
+// }
