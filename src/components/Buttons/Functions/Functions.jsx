@@ -1,5 +1,7 @@
 import React from "react";
 // import EvalEngine from "../../helpers/evalengine";
+import styles from "./Functions.module.css";
+
 function Functions({ input, setInput }) {
   function rpm(array) {
     const precedence = {
@@ -85,7 +87,7 @@ function Functions({ input, setInput }) {
     setInput(estack);
   }
 
-  const operators = ["+", "-", "*", "/","(",")"];
+  const operators = ["+", "-", "*", "/", "(", ")"];
   return (
     <div>
       {operators.map((n) => (
@@ -94,6 +96,7 @@ function Functions({ input, setInput }) {
             onClick={() => {
               setInput((prev) => [...prev, n]);
             }}
+            className={styles.numberButtons}
           >
             {n}
           </button>
@@ -104,6 +107,7 @@ function Functions({ input, setInput }) {
           // console.log("performing logic",translator(input,setInput));
           rpm(input);
         }}
+        className={styles.numberButtons}
       >
         =
       </button>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Buttons from "../Buttons/Buttons";
 import Display from "../Display/Display";
 // import { translator } from "../helpers/translator";
-
+import styles from "./Body.module.css";
 function Body() {
   const [input, setInput] = useState([]);
 
@@ -10,10 +10,9 @@ function Body() {
     console.log(input);
   }, [input]);
   return (
-    <div>
-      <Buttons input={input} setInput={setInput} />
+    <div className={styles.CalculatorBody}>
       <Display input={input} setInput={setInput} />
-      <h1>hello</h1>
+      <Buttons input={input} setInput={setInput} />
     </div>
   );
 }

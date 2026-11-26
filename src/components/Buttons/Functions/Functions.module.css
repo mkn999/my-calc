@@ -8,7 +8,7 @@
   font-weight: 700;
   border-radius: 6px;
   border: 1px solid #8e4215;
-  box-shadow: 
+  box-shadow:
     0 4px 0 #73330f,
     0 5px 6px rgba(0, 0, 0, 0.25),
     inset 0 1px 1px rgba(255, 255, 255, 0.4);
@@ -25,7 +25,7 @@
 
 .numberButtons:active {
   transform: translateY(3px);
-  box-shadow: 
+  box-shadow:
     0 1px 0 #73330f,
     0 2px 3px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@ div:has(> .numberButtons) {
 button.numberButtons:last-child {
   background: linear-gradient(180deg, #5c9973 0%, #3e7352 100%);
   border: 1px solid #2d553c;
-  box-shadow: 
+  box-shadow:
     0 4px 0 #21402c,
     0 5px 6px rgba(0, 0, 0, 0.25),
     inset 0 1px 1px rgba(255, 255, 255, 0.4);
@@ -55,7 +55,7 @@ button.numberButtons:last-child:hover {
 
 button.numberButtons:last-child:active {
   transform: translateY(3px);
-  box-shadow: 
+  box-shadow:
     0 1px 0 #21402c,
     0 2px 3px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.2);

@@ -24,7 +24,7 @@
   font-weight: 700;
   border-radius: 6px;
   border: 1px solid #baa893;
-  box-shadow: 
+  box-shadow:
     0 4px 0 #9c8b77,
     0 5px 6px rgba(0, 0, 0, 0.25),
     inset 0 1px 1px rgba(255, 255, 255, 0.8);
@@ -41,7 +41,7 @@
 
 .numberButtons:active {
   transform: translateY(3px);
-  box-shadow: 
+  box-shadow:
     0 1px 0 #9c8b77,
     0 2px 3px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.15);

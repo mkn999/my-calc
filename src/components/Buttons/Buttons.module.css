@@ -6,7 +6,7 @@ div:has(> .numberContainer) {
   background: #beb6a3;
   padding: 14px;
   border-radius: 10px;
-  box-shadow: 
+  box-shadow:
     inset 0 3px 6px rgba(0, 0, 0, 0.25),
     inset 0 -2px 4px rgba(255, 255, 255, 0.4);
 }
