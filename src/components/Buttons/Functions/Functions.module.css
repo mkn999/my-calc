@@ -1,10 +1,11 @@
+/* Functions.module.css */
 .numberButtons {
   width: 100%;
-  height: 52px;
+  height: 48px;
   background: linear-gradient(180deg, #dd8b57 0%, #b85b23 100%);
   color: #fff8f0;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   border-radius: 6px;
   border: 1px solid #8e4215;
@@ -17,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .numberButtons:hover {
@@ -31,16 +33,9 @@
     inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Operation / Equals distinction or container layout */
-div:has(> .numberButtons) {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 1;
-}
-
-/* Give the equals button a retro accent colour */
+/* Equals button (the direct child button of Functions component) */
 button.numberButtons:last-child {
+  grid-column: span 2 !important;
   background: linear-gradient(180deg, #5c9973 0%, #3e7352 100%);
   border: 1px solid #2d553c;
   box-shadow:

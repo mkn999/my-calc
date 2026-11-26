@@ -1,26 +1,27 @@
-.numberContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  flex: 3;
-}
-
-/* Make 0 span full width across 3 columns */
-.NumberButtonContainer:last-child {
-  grid-column: span 3;
-}
-
+/* Numbers.module.css */
 .NumberButtonContainer {
-  display: flex;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 8px !important;
+  width: 100%;
+}
+
+/* Make 0 button (the 10th item) span full width across 3 columns */
+.NumberButtonContainer > div:last-child {
+  grid-column: span 3 !important;
+}
+
+.NumberButtonContainer > div {
+  display: flex !important;
 }
 
 .numberButtons {
   width: 100%;
-  height: 52px;
+  height: 48px;
   background: linear-gradient(180deg, #ede7d8 0%, #d4ccc0 100%);
   color: #38342f;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   border-radius: 6px;
   border: 1px solid #baa893;
@@ -33,6 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .numberButtons:hover {
